@@ -1,0 +1,11 @@
+# Ignore artifacts and external modules:
+dist
+node_modules
+static
+
+# Ignore other files:
+.husky
+package-lock.json
+
+# Ignore HTML files:
+*.html
