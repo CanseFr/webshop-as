@@ -54,8 +54,9 @@ export const Layout = () => {
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 color: 'inherit',
-                textDecoration: 'none'
-              }}>
+                textDecoration: 'none',
+              }}
+            >
               <img src="../../public/assets/logo/logo-ico.png" width="30px" alt="" />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -65,7 +66,8 @@ export const Layout = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit">
+                color="inherit"
+              >
                 <MenuIcon />
               </IconButton>
               <Menu
@@ -73,18 +75,19 @@ export const Layout = () => {
                 anchorEl={anchorElNav}
                 anchorOrigin={{
                   vertical: 'bottom',
-                  horizontal: 'left'
+                  horizontal: 'left',
                 }}
                 keepMounted
                 transformOrigin={{
                   vertical: 'top',
-                  horizontal: 'left'
+                  horizontal: 'left',
                 }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
-                  display: { xs: 'block', md: 'none' }
-                }}>
+                  display: { xs: 'block', md: 'none' },
+                }}
+              >
                 {pages.map((page, index) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Link to={links[index]}>
@@ -107,8 +110,9 @@ export const Layout = () => {
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 color: 'inherit',
-                textDecoration: 'none'
-              }}>
+                textDecoration: 'none',
+              }}
+            >
               <img src="../../public/assets/logo/logo-ico.png" width="30px" alt="" />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -117,22 +121,17 @@ export const Layout = () => {
                   key={page}
                   onClick={handleCloseNavMenu}
                   href={links[index]}
-                  sx={{ my: 2, color: 'white', display: 'block' }}>
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
                   <Typography textAlign="center">{page}</Typography>
                 </Button>
               ))}
             </Box>
-            <Button
-              sx={{ fontWeight: 'bold', color: 'white' }}
-              variant="text"
-              onClick={handleRedirectLogin}>
+            <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="text" onClick={handleRedirectLogin}>
               Login
             </Button>
             &nbsp;&nbsp;
-            <Button
-              sx={{ fontWeight: 'bold', color: 'white' }}
-              variant="contained"
-              onClick={handleRedirectRegister}>
+            <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained" onClick={handleRedirectRegister}>
               Register
             </Button>
           </Toolbar>
