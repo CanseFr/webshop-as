@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":rocket: Setup the dockerization of the app">
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":art: Run prettier on all files">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/api/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706265825110</updated>
       <workItem from="1706265826116" duration="26875000" />
-      <workItem from="1706391282267" duration="1689000" />
+      <workItem from="1706391282267" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -349,15 +352,7 @@
       <option name="project" value="LOCAL" />
       <updated>1706382884665</updated>
     </task>
-    <task id="LOCAL-00031" summary=":rocket: Setup the dockerization of the app">
-      <option name="closed" value="true" />
-      <created>1706392491622</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1706392491622</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,6 +375,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
+    <MESSAGE value=":arrow_up: Workspace added in lock automaticly" />
     <MESSAGE value=":see_no_evil: Delete &quot;/workspace.xml&quot; from projet/.idea/.gitignore" />
     <MESSAGE value=":sparkles: Create API NestJs" />
     <MESSAGE value=":see_no_evil: Modify projet/.idea/.gitignore delete &quot;/shelf/&#10;&quot;" />
@@ -404,7 +400,6 @@
     <MESSAGE value=":memo: Start of writing the ReadeMe" />
     <MESSAGE value=":sparkles: Introduce rules about lint and prettier" />
     <MESSAGE value=":art: Run prettier on all files" />
-    <MESSAGE value=":rocket: Setup the dockerization of the app" />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Setup the dockerization of the app" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: Run prettier on all files" />
   </component>
 </project>
