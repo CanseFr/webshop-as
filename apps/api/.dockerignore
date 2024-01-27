@@ -1,0 +1,6 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+# TODO : Problems with build dist with docker : Check doc about CMD
+# dist

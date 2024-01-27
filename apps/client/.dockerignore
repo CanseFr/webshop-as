@@ -1,0 +1,7 @@
+node_modules
+build
+.dockerignore
+../../Dockerfile
+Dockerfile.prod
+# TODO : Problems with build dist with docker : Check doc about CMD
+# dist
