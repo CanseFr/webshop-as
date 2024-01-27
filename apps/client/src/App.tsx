@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import {Contact} from "./pages/contact";
-import {Layout} from "./layouts/top-bar.tsx";
-import {Home} from "./pages/home";
-import {Shop} from "./pages/shop";
-import {Login} from "./pages/login";
-import {Register} from "./pages/register";
+import { Contact } from './pages/contact';
+import { Layout } from './layouts/top-bar.tsx';
+import { Home } from './pages/home';
+import { Shop } from './pages/shop';
+import { Login } from './pages/login';
+import { Register } from './pages/register';
 
 export const App = () => {
   return (
@@ -21,5 +21,4 @@ export const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
-
+};

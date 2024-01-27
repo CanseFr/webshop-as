@@ -17,7 +17,8 @@ export const Register = () => {
       padding={10}
       borderRadius={7}
       boxShadow={4}
-      sx={{ marginTop: '20vh' }}>
+      sx={{ marginTop: '20vh' }}
+    >
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Register</Typography>
       </Grid>
@@ -31,20 +32,10 @@ export const Register = () => {
         <TextField color="secondary" id="outlined-password-input" label="Email" type="email" />
       </Grid>
       <Grid item xs={8}>
-        <TextField
-          color="secondary"
-          id="outlined-password-input"
-          label="Password"
-          type="password"
-        />
+        <TextField color="secondary" id="outlined-password-input" label="Password" type="password" />
       </Grid>
       <Grid item xs={8}>
-        <TextField
-          color="secondary"
-          id="outlined-password-input"
-          label="Confirm password"
-          type="password"
-        />
+        <TextField color="secondary" id="outlined-password-input" label="Confirm password" type="password" />
       </Grid>
       <Grid item margin="auto" xs={8}>
         <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained">

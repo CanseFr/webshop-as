@@ -17,7 +17,8 @@ export const Login = () => {
       padding={10}
       borderRadius={7}
       boxShadow={4}
-      sx={{ marginTop: '20vh' }}>
+      sx={{ marginTop: '20vh' }}
+    >
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Login</Typography>
       </Grid>
