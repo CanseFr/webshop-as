@@ -1,0 +1,27 @@
+name: Run ESLint
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint on changed files
+        uses: tj-actions/eslint-changed-files@v21
+        with:
+          config_path: "./.eslintrc.js"
+          ignore_path: "./.eslintignore"
+          skip_annotations: "true"
+          file_extensions: |
+            **/*.ts
+            **/*.tsx
