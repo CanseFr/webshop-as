@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 export const Register = () => {
   return (
     <Grid
-      width="80vw"
+      width="40vw"
       container
       spacing={2}
       display="flex"
@@ -13,11 +13,11 @@ export const Register = () => {
       alignContent="center"
       margin="auto"
       justifyContent="center"
-      bgcolor="#d5d3d3"
+      bgcolor="#f2f2f2"
       padding={10}
-      borderRadius={7}
+      borderRadius={2}
       boxShadow={4}
-      sx={{ marginTop: '20vh' }}
+      sx={{ marginTop: '10vh' }}
     >
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Register</Typography>
