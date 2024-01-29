@@ -34,6 +34,9 @@ export const Login = () => {
           color="secondary"
         />
       </Grid>
+      <Grid item xs={8}>
+        <Typography>Mot de passe oublié ?</Typography>
+      </Grid>
       <Grid item margin="auto" xs={8}>
         <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained">
           Valider

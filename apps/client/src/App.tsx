@@ -4,8 +4,10 @@ import { Contact } from './pages/contact';
 import { Layout } from './layouts/top-bar.tsx';
 import { Home } from './pages/home';
 import { Shop } from './pages/shop';
-import { Login } from './pages/login';
-import { Register } from './pages/register';
+import { Login } from './auth/login';
+import { Register } from './auth/register';
+import { GeneralConditions } from './auth/general-conditions';
+import { ForgotPassword } from './auth/forgot-password';
 
 export const App = () => {
   return (
@@ -17,6 +19,8 @@ export const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="conditions" element={<GeneralConditions />} />
+          <Route path="password" element={<ForgotPassword />} />
         </Route>
       </Routes>
     </BrowserRouter>
