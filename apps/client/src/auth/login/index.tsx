@@ -1,8 +1,11 @@
 import { Grid, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <Grid
       width="40vw"
@@ -34,8 +37,10 @@ export const Login = () => {
           color="secondary"
         />
       </Grid>
-      <Grid item xs={8}>
-        <Typography>Mot de passe oublié ?</Typography>
+      <Grid item xs={8} margin="auto">
+        <Typography onClick={() => navigate('/password')} sx={{ fontWeight: 'bold', cursor: 'pointer' }}>
+          Mot de passe oublié ?
+        </Typography>
       </Grid>
       <Grid item margin="auto" xs={8}>
         <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained">

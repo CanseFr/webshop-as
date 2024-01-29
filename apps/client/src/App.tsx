@@ -6,7 +6,6 @@ import { Home } from './pages/home';
 import { Shop } from './pages/shop';
 import { Login } from './auth/login';
 import { Register } from './auth/register';
-import { GeneralConditions } from './auth/general-conditions';
 import { ForgotPassword } from './auth/forgot-password';
 
 export const App = () => {
@@ -19,7 +18,6 @@ export const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="conditions" element={<GeneralConditions />} />
           <Route path="password" element={<ForgotPassword />} />
         </Route>
       </Routes>
