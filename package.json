@@ -12,5 +12,9 @@
   },
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
+    "react-draggable": "^4.4.6"
+  }
 }
