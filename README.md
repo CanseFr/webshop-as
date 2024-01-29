@@ -20,6 +20,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#Features">Features</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -30,8 +31,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -44,10 +43,68 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This project was undertaken as a personal study and research. Please note that some components may not be aligned with best practices. I draw the attention of those considering using this project for commercial purposes to this consideration.
 
-Welcome to my secure online store project, a robust platform that combines advanced features for users and efficient management for administrators.
+I'm open to any tips, tricks, or warnings you might have to share, in the interest of further enriching this project.
 
-The main goal of this project is to create a secure online shopping experience, with a dedicated admin area to manage orders, inventory, and more. On the customer side, we have integrated user-friendly features for an optimal shopping experience.
+
+As part of this project, my goal is to implement the essential functionalities of a modern online store. Here are the features I plan to implement:
+
+<!-- FEATURES -->
+
+## Features
+
+### Basic features:
+
+  - **Product catalog**: Clear display of products with detailed information.
+
+  - **Shopping cart**: Easy addition, modification and deletion of products in the cart.
+
+  - **Ordering process**: Simple and intuitive ordering steps.
+
+  - **Secure payment options**: Integration of secure online payment methods: Visa & paypal with stripe.
+
+  - **Order management system**: Order tracking, invoice, transaction history & PDF Export.
+
+  - **User management**: Registration, connection, and management of user accounts.
+
+  - **Filtering and Search**: Advanced search features and filters to help users find products quickly.
+
+  - **Rating and Review System**: Allows customers to leave comments and ratings on products.
+
+  - **Notifications**: Email alerts or push notifications for order updates, promotions, etc.
+
+  - **Inventory management**: Automatically updates stock levels to prevent overselling.
+  
+  - **Multi-language Support**: English, Spanish, French, German, Mandarin, Japanese, Arabic, Portuguese, Russian, Hindi, Japanese.
+
+  - **Light/Dark mode**: Customizing the UI.
+  
+  - **Mail Alert** : On registration, forgot password, news letter & invoice confirmation.
+
+
+### Little extras:
+
+  - **Loyalty Program**: Rewards for loyal customers.
+  
+  - **Register/Login** : With Google.
+
+  - **Personalized Recommendations**: Product suggestions based on purchase history.
+
+  - **Social Media Integration**: Easy sharing of products on social media.
+
+  - **Live**: Real-time chat support to answer customer questions, alert.
+
+  - **Flexible Shipping Options**: Choice of different shipping options and real-time tracking.
+
+  - **FAQ Page**: Answers to frequently asked questions.
+
+  - **Affiliate Programs**: Allows users to earn commissions by recommending products.
+
+  - **Flash sales and promotions**: Special offers and temporary discounts.
+
+  - **Mobile application**: Mobile version of the site or dedicated application.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,6 +145,8 @@ The main goal of this project is to create a secure online shopping experience, 
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
