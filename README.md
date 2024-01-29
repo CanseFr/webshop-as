@@ -51,15 +51,43 @@ The main goal of this project is to create a secure online shopping experience, 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- BUILT WITH -->
 ### Built With
 
 * [![NestJs][NestJs]][Next-url]
+* [![Prisma][Prisma]][Prisma-url]
+* [![Docker][Docker]][Docker-url]
+* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
 * [![React][React.js]][React-url]
-* [![Vite][Vite]][React-url]
+* [![Vite][Vite]][Vite-url]
+* [![Turbo][Turbo]][Turbo-url]
+* [![Npm][Npm]][Npm-url]
+* [![Mui][Mui]][Mui-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/CanseFr/webshop-as.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -100,6 +128,21 @@ Project Link: [Github](https://github.com/CanseFr)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [NestJs]: https://img.shields.io/badge/nestJs-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React.js]: https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Vite]: https://img.shields.io/badge/Vite-20232A?style=for-the-badge&logo=vite&logoColor=61DAFB
+[Vite]: https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite&logoColor=e6d92e
+[Vite-url]: https://vitejs.dev/
+[Turbo]: https://img.shields.io/badge/Turbo-000000?style=for-the-badge&logo=turbo&logoColor=d93dc7
+[Turbo-url]: [https://vitejs.dev/](https://turbo.build/)https://turbo.build/
+[Prisma]: https://img.shields.io/badge/Prisma-000000?style=for-the-badge&logo=prisma&logoColor=8052ab
+[Prisma-url]: https://www.prisma.io/
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=PostgreSQL&logoColor=688fde
+[PostgreSQL-url]: https://www.postgresql.org/
+[Docker]: https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=Docker&logoColor=150c91
+[Docker-url]: https://www.docker.com/
+[Npm]: https://img.shields.io/badge/Npm-000000?style=for-the-badge&logo=Npm&logoColor=ed0000
+[Npm-url]: https://www.npmjs.com/
+[Mui]: https://img.shields.io/badge/Mui-000000?style=for-the-badge&logo=Mui&logoColor=3d4ee3
+[Mui-url]: https://www.npmjs.com/
+
+
