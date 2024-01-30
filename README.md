@@ -114,7 +114,7 @@ As part of this project, my goal is to implement the essential functionalities o
 * [![NestJs][NestJs]][Next-url]
 * [![Prisma][Prisma]][Prisma-url]
 * [![Docker][Docker]][Docker-url]
-* [![PostgreSQL][PostgreSQL]][PostgreSQL-url]
+* [![MySql][MySql]][MySql-url]
 * [![React][React.js]][React-url]
 * [![Vite][Vite]][Vite-url]
 * [![Turbo][Turbo]][Turbo-url]
@@ -195,8 +195,8 @@ Project Link: [Github](https://github.com/CanseFr)
 [Turbo-url]: [https://vitejs.dev/](https://turbo.build/)https://turbo.build/
 [Prisma]: https://img.shields.io/badge/Prisma-000000?style=for-the-badge&logo=prisma&logoColor=8052ab
 [Prisma-url]: https://www.prisma.io/
-[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=PostgreSQL&logoColor=688fde
-[PostgreSQL-url]: https://www.postgresql.org/
+[MySql]: https://img.shields.io/badge/MySql-000000?style=for-the-badge&logo=MySql&logoColor=de7a16
+[MySql-url]: https://www.mysql.com/fr/
 [Docker]: https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=Docker&logoColor=150c91
 [Docker-url]: https://www.docker.com/
 [Npm]: https://img.shields.io/badge/Npm-000000?style=for-the-badge&logo=Npm&logoColor=ed0000
