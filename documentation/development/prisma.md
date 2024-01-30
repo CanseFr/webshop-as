@@ -8,7 +8,7 @@ If you wish to modify the database, such as a table for example or certain const
 model Article {
   id          Int      @id @default(autoincrement())
   title       String   @unique
-  newItem     NewType  NewConstraint
+  newItem     NewType  @default()
 }
 ```
 
