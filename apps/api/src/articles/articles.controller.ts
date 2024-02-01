@@ -1,8 +1,8 @@
-import {Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post} from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post } from '@nestjs/common';
 import { ArticlesService } from './articles.service';
 import { CreateArticleDto } from './dto/create-article.dto';
 import { UpdateArticleDto } from './dto/update-article.dto';
-import {ApiCreatedResponse, ApiOkResponse, ApiTags} from '@nestjs/swagger';
+import { ApiCreatedResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { ArticleEntity } from './entities/article.entity';
 
 @Controller('articles')
@@ -36,10 +36,7 @@ export class ArticlesController {
 
   @Patch(':id')
   @ApiCreatedResponse({ type: ArticleEntity })
-  update(
-    @Param('id', ParseIntPipe) id: number,
-    @Body() updateArticleDto: UpdateArticleDto,
-  ) {
+  update(@Param('id', ParseIntPipe) id: number, @Body() updateArticleDto: UpdateArticleDto) {
     return this.articlesService.update(id, updateArticleDto);
   }
 
