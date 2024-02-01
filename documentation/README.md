@@ -3,9 +3,13 @@
 ## Summary
 
 - Development
-
   - [Linting][linting]
   - [Mono Repo][monorepo]
+ 
+- Deployment:
+  - [CI][ci]
+  - [CD][cd]
+
 
 - General
   - [Developpement VS Production environement][dev-and-prod]
@@ -18,3 +22,6 @@
 [dev-and-prod]: general/dev-and-prod.md
 [decisions]: general/decisions.md
 [glossary]: general/glossary.md
+[ci]: deployment/ci.md
+[cd]: deployment/cd.md
+
