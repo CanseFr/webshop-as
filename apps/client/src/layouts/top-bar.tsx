@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Shop', 'Contact'];
 const links = ['/', '/shop', '/contact'];
@@ -27,14 +27,9 @@ export const Layout = () => {
     setAnchorElNav(null);
   };
 
-  const handleRedirectLogin = () => {
+  const handleRedirect = (link: string) => {
     setAnchorElNav(null);
-    navigate('/login');
-  };
-
-  const handleRedirectRegister = () => {
-    setAnchorElNav(null);
-    navigate('/register');
+    navigate(link);
   };
 
   return (
@@ -90,9 +85,9 @@ export const Layout = () => {
               >
                 {pages.map((page, index) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link to={links[index]}>
-                      <Typography textAlign="center">{page}</Typography>
-                    </Link>
+                    <Typography onClick={() => handleRedirect(links[index])} textAlign="center">
+                      {page}
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -119,19 +114,22 @@ export const Layout = () => {
               {pages.map((page, index) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
-                  href={links[index]}
+                  onClick={() => handleRedirect(links[index])}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   <Typography textAlign="center">{page}</Typography>
                 </Button>
               ))}
             </Box>
-            <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="text" onClick={handleRedirectLogin}>
+            <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="text" onClick={() => handleRedirect('/login')}>
               Login
             </Button>
             &nbsp;&nbsp;
-            <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained" onClick={handleRedirectRegister}>
+            <Button
+              sx={{ fontWeight: 'bold', color: 'white' }}
+              variant="contained"
+              onClick={() => handleRedirect('/register')}
+            >
               Register
             </Button>
           </Toolbar>
