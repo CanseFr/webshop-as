@@ -144,6 +144,23 @@ As part of this project, my goal is to implement the essential functionalities o
    npm install
    ```
 
+4. Ajust .env file
+   ```sh
+    prisma generate
+   .env > DATABASE_URL="mysql://user:password@localhost:PORT/webshop-as"
+   ```
+5. Create database if needed
+    ```sql
+    create schema `webshop-as`;
+    ```
+6. Seed entities and tables
+    ```shell
+    cd apps/api
+    npx prisma migrate dev --name "restart-from-branch"
+    npx prisma db seed
+    ```
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
