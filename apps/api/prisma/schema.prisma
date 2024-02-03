@@ -17,4 +17,17 @@ model Article {
   published   Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  gallery     Gallery? @relation(fields: [galleryId], references: [id])
+  galleryId   Int?
+}
+
+model Gallery {
+  id             Int       @id @default(autoincrement())
+  thumbnail_path String    @unique
+  gal_1_path     String    @unique
+  gal_2_path     String?   @unique
+  gal_3_path     String?   @unique
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  articles       Article[]
 }
