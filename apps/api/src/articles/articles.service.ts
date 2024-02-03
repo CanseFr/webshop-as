@@ -12,15 +12,15 @@ export class ArticlesService {
   }
 
   findDrafts() {
-    return this.prisma.article.findMany({ where: { published: false } });
+    return this.prisma.article.findMany({ where: { published: false }, include: { gallery: true } });
   }
 
   findAll() {
-    return this.prisma.article.findMany({ where: { published: true } });
+    return this.prisma.article.findMany({ where: { published: true }, include: { gallery: true } });
   }
 
   findOne(id: number) {
-    return this.prisma.article.findUnique({ where: { id } });
+    return this.prisma.article.findUnique({ where: { id }, include: { gallery: true } });
   }
 
   update(id: number, updateArticleDto: UpdateArticleDto) {
