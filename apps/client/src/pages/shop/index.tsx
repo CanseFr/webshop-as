@@ -15,6 +15,9 @@ export const Shop = () => {
     setIsLoading(false);
   }, []);
 
+  // esLint
+  isLoading;
+
   if (!articleList)
     return (
       <Grid display="flex" justifyContent="center" marginTop={40}>
