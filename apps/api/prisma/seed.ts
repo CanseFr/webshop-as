@@ -49,6 +49,61 @@ async function main() {
     },
   });
 
+  const img5 = await prisma.gallery.upsert({
+    where: { thumbnail_path: 'assets/article/BT005KNO0.png' },
+    update: {},
+    create: {
+      thumbnail_path: 'assets/article/BT005KNO0.png',
+      gal_1_path: 'assets/article/BT005KNO1.png',
+      gal_2_path: 'assets/article/BT005KNO2.png',
+      gal_3_path: 'assets/article/BT005KNO3.png',
+    },
+  });
+
+  const img6 = await prisma.gallery.upsert({
+    where: { thumbnail_path: 'assets/article/BT006KNO0.png' },
+    update: {},
+    create: {
+      thumbnail_path: 'assets/article/BT006KNO0.png',
+      gal_1_path: 'assets/article/BT006KNO1.png',
+      gal_2_path: 'assets/article/BT006KNO2.png',
+      gal_3_path: 'assets/article/BT006KNO3.png',
+    },
+  });
+
+  const img7 = await prisma.gallery.upsert({
+    where: { thumbnail_path: 'assets/article/BT007KNO0.png' },
+    update: {},
+    create: {
+      thumbnail_path: 'assets/article/BT007KNO0.png',
+      gal_1_path: 'assets/article/BT007KNO1.png',
+      gal_2_path: 'assets/article/BT007KNO2.png',
+      gal_3_path: 'assets/article/BT007KNO3.png',
+    },
+  });
+
+  const img8 = await prisma.gallery.upsert({
+    where: { thumbnail_path: 'assets/article/BT008KNO0.png' },
+    update: {},
+    create: {
+      thumbnail_path: 'assets/article/BT008KNO0.png',
+      gal_1_path: 'assets/article/BT008KNO1.png',
+      gal_2_path: 'assets/article/BT008KNO2.png',
+      gal_3_path: 'assets/article/BT008KNO3.png',
+    },
+  });
+
+  const img9 = await prisma.gallery.upsert({
+    where: { thumbnail_path: 'assets/article/BT009KNO0.png' },
+    update: {},
+    create: {
+      thumbnail_path: 'assets/article/BT009KNO0.png',
+      gal_1_path: 'assets/article/BT009KNO1.png',
+      gal_2_path: 'assets/article/BT009KNO2.png',
+      gal_3_path: 'assets/article/BT009KNO3.png',
+    },
+  });
+
   // Articles
   const post1 = await prisma.article.upsert({
     where: { title: 'Black Kanji Japan' },
@@ -106,7 +161,76 @@ async function main() {
     },
   });
 
-  console.log({ post1, post2, post3, post4 });
+  const post5 = await prisma.article.upsert({
+    where: { title: 'Black Sakura' },
+    update: {},
+    create: {
+      title: 'Black Sakura',
+      description: 'Black t-shirt with Sakura',
+      reference: 'TB005SAK',
+      price: 23,
+      stock: 20,
+      published: true,
+      galleryId: img5.id,
+    },
+  });
+
+  const post6 = await prisma.article.upsert({
+    where: { title: 'Black Dragon' },
+    update: {},
+    create: {
+      title: 'Black Dragon',
+      description: 'Black t-shirt with Dragon',
+      reference: 'TB006DRA',
+      price: 24,
+      stock: 20,
+      published: true,
+      galleryId: img6.id,
+    },
+  });
+
+  const post7 = await prisma.article.upsert({
+    where: { title: 'Black Cherry Blossom' },
+    update: {},
+    create: {
+      title: 'Black Cherry Blossom',
+      description: 'Black t-shirt with Cherry Blossom',
+      reference: 'TB007CHR',
+      price: 25,
+      stock: 20,
+      published: true,
+      galleryId: img7.id,
+    },
+  });
+
+  const post8 = await prisma.article.upsert({
+    where: { title: 'Black Dragon' },
+    update: {},
+    create: {
+      title: 'Black Dragon',
+      description: 'Black t-shirt with Dragon',
+      reference: 'TB008DRG',
+      price: 30,
+      stock: 15,
+      published: true,
+      galleryId: img8.id,
+    },
+  });
+
+  const post9 = await prisma.article.upsert({
+    where: { title: 'Black Samurai' },
+    update: {},
+    create: {
+      title: 'Black Samurai',
+      description: 'Black t-shirt with Samurai',
+      reference: 'TB009SAM',
+      price: 28,
+      stock: 18,
+      published: true,
+      galleryId: img9.id,
+    },
+  });
+  console.log({ post1, post2, post3, post4, post5, post6, post7, post8, post9 });
   console.log({ img1, img2, img3, img4 });
 }
 
