@@ -31,3 +31,16 @@ model Gallery {
   updatedAt      DateTime  @updatedAt
   articles       Article[]
 }
+
+model User {
+  id         Int      @id @default(autoincrement())
+  lastname   String
+  firstname  String
+  birthday   String
+  email      String   @unique
+  password   String
+  role       String
+  avatarPath String   @unique
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}

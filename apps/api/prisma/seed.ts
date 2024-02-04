@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'; // initialize Prisma Client
+import * as bcrypt from 'bcrypt';
 
 // initialize Prisma Client
 const prisma = new PrismaClient();
@@ -230,8 +231,44 @@ async function main() {
       galleryId: img9.id,
     },
   });
+
+  // User
+
+  const roundsOfHashing = 10;
+  const passwordAdmin1 = await bcrypt.hash('adminadmin', roundsOfHashing);
+  const passwordUser1 = await bcrypt.hash('useruser', roundsOfHashing);
+
+  const user1 = await prisma.user.upsert({
+    where: { email: 'admin@admin.admin' },
+    update: {},
+    create: {
+      firstname: 'Ju',
+      lastname: 'Canse',
+      birthday: '10/10/1990',
+      email: 'admin@admin.admin',
+      role: 'ADMIN',
+      password: passwordAdmin1,
+      avatarPath: 'assets/avatar/user-avatar-00001',
+    },
+  });
+
+  const user2 = await prisma.user.upsert({
+    where: { email: 'user@user.user' },
+    update: {},
+    create: {
+      firstname: 'Maggy',
+      lastname: 'BIBITTE',
+      birthday: '10/10/1990',
+      email: 'user@user.user',
+      role: 'USER',
+      password: passwordUser1,
+      avatarPath: 'assets/avatar/user-avatar-00002',
+    },
+  });
+
   console.log({ post1, post2, post3, post4, post5, post6, post7, post8, post9 });
   console.log({ img1, img2, img3, img4 });
+  console.log({ user1, user2 });
 }
 
 // execute the main function
