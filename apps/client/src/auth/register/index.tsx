@@ -2,8 +2,15 @@ import { Checkbox, FormControlLabel, Grid, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { CGU } from '../general-conditions';
+import { DateField, LocalizationProvider } from '@mui/x-date-pickers';
+import React from 'react';
+import dayjs, { Dayjs } from 'dayjs';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 export const Register = () => {
+  const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-17'));
+
   return (
     <>
       <Grid
@@ -29,6 +36,18 @@ export const Register = () => {
         </Grid>
         <Grid margin="auto" item xs={8}>
           <TextField color="secondary" id="outlined-password-input" label="Prenom" type="text" />
+        </Grid>
+        <Grid margin="auto" item xs={8}>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DateField', 'DateField']}>
+              <DateField
+                color="secondary"
+                label="Controlled field"
+                value={value}
+                onChange={(newValue) => setValue(newValue)}
+              />
+            </DemoContainer>
+          </LocalizationProvider>{' '}
         </Grid>
         <Grid margin="auto" item xs={8}>
           <TextField color="secondary" id="outlined-password-input" label="Email" type="email" />
