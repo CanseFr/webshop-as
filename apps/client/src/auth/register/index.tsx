@@ -1,4 +1,4 @@
-import { Checkbox, FormControlLabel, Grid, TextField } from '@mui/material';
+import { Checkbox, FormControlLabel, Grid, styled, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { CGU } from '../general-conditions';
@@ -7,9 +7,22 @@ import React from 'react';
 import dayjs, { Dayjs } from 'dayjs';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export const Register = () => {
   const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-17'));
+
+  const VisuallyHiddenInput = styled('input')({
+    clip: 'rect(0 0 0 0)',
+    clipPath: 'inset(50%)',
+    height: 1,
+    overflow: 'hidden',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    whiteSpace: 'nowrap',
+    width: 1,
+  });
 
   return (
     <>
@@ -40,15 +53,11 @@ export const Register = () => {
         <Grid margin="auto" item xs={8}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DemoContainer components={['DateField', 'DateField']}>
-              <DateField
-                color="secondary"
-                label="Controlled field"
-                value={value}
-                onChange={(newValue) => setValue(newValue)}
-              />
+              <DateField color="secondary" value={value} onChange={(newValue) => setValue(newValue)} />
             </DemoContainer>
           </LocalizationProvider>{' '}
         </Grid>
+
         <Grid margin="auto" item xs={8}>
           <TextField color="secondary" id="outlined-password-input" label="Email" type="email" />
         </Grid>
@@ -57,6 +66,12 @@ export const Register = () => {
         </Grid>
         <Grid margin="auto" item xs={8}>
           <TextField color="secondary" id="outlined-password-input" label="Confirm password" type="password" />
+        </Grid>
+        <Grid margin="auto" item xs={8}>
+          <Button component="label" variant="contained" startIcon={<AccountCircleIcon />}>
+            Avatar
+            <VisuallyHiddenInput type="file" />
+          </Button>
         </Grid>
         <Grid item xs={8} margin="auto">
           <FormControlLabel control={<Checkbox />} label="Accepter les conditions générales de vente" />
