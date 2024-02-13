@@ -2,9 +2,17 @@ import { Grid, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../../features/authentication/authenticationSlice.ts';
+import { useState } from 'react';
 
 export const Login = () => {
   const navigate = useNavigate();
+
+  const [mail, setMail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const dispatch = useDispatch();
+  const { user, isAuthenticated, email, password: pass } = useSelector((store: any) => store.authentication);
 
   return (
     <Grid
@@ -22,11 +30,17 @@ export const Login = () => {
       boxShadow={4}
       sx={{ marginTop: '20vh' }}
     >
+      {user}
+      {isAuthenticated}
+      {mail}
+      {password}
+      {pass}
+      {email}
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Login</Typography>
       </Grid>
       <Grid item xs={8}>
-        <TextField color="secondary" id="outlined-password-input" label="Email" type="email" />
+        <TextField color="secondary" id="outlined-password-input" label="Email" type="email" onChange={(e) => setMail(e.target.value)} />
       </Grid>
       <Grid item xs={8}>
         <TextField
@@ -35,6 +49,7 @@ export const Login = () => {
           type="password"
           autoComplete="current-password"
           color="secondary"
+          onChange={(e) => setPassword(e.target.value)}
         />
       </Grid>
       <Grid item xs={8} margin="auto">
@@ -43,7 +58,11 @@ export const Login = () => {
         </Typography>
       </Grid>
       <Grid item margin="auto" xs={8}>
-        <Button sx={{ fontWeight: 'bold', color: 'white' }} variant="contained">
+        <Button
+          sx={{ fontWeight: 'bold', color: 'white' }}
+          variant="contained"
+          onClick={() => dispatch(login(email, password))}
+        >
           Valider
         </Button>
       </Grid>
