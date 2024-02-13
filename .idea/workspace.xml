@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":art: Run prettier on all files">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/api/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/.dockerignore" afterDir="false" />
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Get methode slicer and show value on template">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +31,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
+    &quot;associatedIndex&quot;: 4
+    }</component>
   <component name="ProjectId" id="2bUNiZZuOPxDYZdXLgaApgtkpMF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,7 +46,7 @@
     "Docker.Dockerfile build.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "7-setup-docker",
+    "git-widget-placeholder": "28-setup-login",
     "js.linters.configure.manually.selectedeslint": "true",
     "last_opened_file_path": "/Users/canse/Documents/App/webshop-as/apps/client/src/pages/shop",
     "node.js.detected.package.eslint": "true",
@@ -92,7 +89,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -352,7 +351,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706382884665</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary=":heavy_plus_sign: Add dependecies about redux and tool-kit">
+      <option name="closed" value="true" />
+      <created>1707831550814</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831550814</updated>
+    </task>
+    <task id="LOCAL-00032" summary=":sparkles: Create the Authentication slice and his Store">
+      <option name="closed" value="true" />
+      <created>1707831575098</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831575098</updated>
+    </task>
+    <task id="LOCAL-00033" summary=":sparkles: Provide context store">
+      <option name="closed" value="true" />
+      <created>1707831596617</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831596617</updated>
+    </task>
+    <task id="LOCAL-00034" summary=":sparkles: Get methode slicer and show value on template">
+      <option name="closed" value="true" />
+      <created>1707831621967</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831621967</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,10 +406,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
-    <MESSAGE value=":arrow_up: Workspace added in lock automaticly" />
-    <MESSAGE value=":see_no_evil: Delete &quot;/workspace.xml&quot; from projet/.idea/.gitignore" />
-    <MESSAGE value=":sparkles: Create API NestJs" />
-    <MESSAGE value=":see_no_evil: Modify projet/.idea/.gitignore delete &quot;/shelf/&#10;&quot;" />
     <MESSAGE value=":see_no_evil: Comment all gitignore file of projet/.idea/.gitignore" />
     <MESSAGE value=":sparkles: Create Api Nestjs for real, last was juste about package json and many probleme about .git in apps/api" />
     <MESSAGE value=":sparkles: Create Client React" />
@@ -400,6 +427,10 @@
     <MESSAGE value=":memo: Start of writing the ReadeMe" />
     <MESSAGE value=":sparkles: Introduce rules about lint and prettier" />
     <MESSAGE value=":art: Run prettier on all files" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: Run prettier on all files" />
+    <MESSAGE value=":heavy_plus_sign: Add dependecies about redux and tool-kit" />
+    <MESSAGE value=":sparkles: Create the Authentication slice and his Store" />
+    <MESSAGE value=":sparkles: Provide context store" />
+    <MESSAGE value=":sparkles: Get methode slicer and show value on template" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Get methode slicer and show value on template" />
   </component>
 </project>
