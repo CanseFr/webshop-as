@@ -5,6 +5,7 @@ const initialState = {
   isAuthenticated: false,
   email: '',
   password: '',
+  role: '',
 };
 
 const authenticateSlice = createSlice({
@@ -22,6 +23,7 @@ const authenticateSlice = createSlice({
         state.isAuthenticated = true;
         state.email = action.payload.email;
         state.password = action.payload.password;
+        state.role = 'ADMIN';
       },
     },
     logout(state) {
