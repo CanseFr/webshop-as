@@ -2,7 +2,7 @@ import { Grid, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../features/authentication/authenticationSlice.ts';
 import { useState } from 'react';
 
@@ -12,6 +12,11 @@ export const Login = () => {
   const [mail, setMail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const dispatch = useDispatch();
+  const { isAuthenticated, errorFetchingLogin } = useSelector((store: any) => store.authentication);
+
+  if (isAuthenticated) {
+    navigate('/');
+  }
 
   return (
     <Grid
@@ -29,10 +34,11 @@ export const Login = () => {
       boxShadow={4}
       sx={{ marginTop: '20vh' }}
     >
+      {errorFetchingLogin != '' && errorFetchingLogin}
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Login</Typography>
       </Grid>
-      <Grid item xs={8}>
+      <Grid margin="auto" item xs={8}>
         <TextField
           color="secondary"
           id="outlined-password-input"
@@ -41,7 +47,7 @@ export const Login = () => {
           onChange={(e) => setMail(e.target.value)}
         />
       </Grid>
-      <Grid item xs={8}>
+      <Grid margin="auto" item xs={8}>
         <TextField
           id="outlined-password-input"
           label="Password"
