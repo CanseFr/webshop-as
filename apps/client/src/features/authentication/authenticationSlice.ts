@@ -31,7 +31,9 @@ const authenticateSlice = createSlice({
       const tokenDecoded = getDecodedAccessToken(action.payload);
       state.isAuthenticated = true;
       state.tokenHashed = action.payload;
+
       state.role = tokenDecoded.role;
+
       state.userId = tokenDecoded.userId;
       state.avatarPath = tokenDecoded.avatarPath;
       state.email = tokenDecoded.email;
@@ -39,12 +41,15 @@ const authenticateSlice = createSlice({
       state.lastname = tokenDecoded.lastname;
       state.exp = tokenDecoded.exp;
       state.iat = tokenDecoded.iat;
+
       state.errorFetchingLogin = '';
     },
     logout(state) {
       state.isAuthenticated = false;
       state.tokenHashed = '';
+
       state.role = '';
+
       state.userId = null;
       state.avatarPath = '';
       state.email = '';
