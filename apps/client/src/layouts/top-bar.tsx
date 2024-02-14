@@ -24,7 +24,7 @@ export const Layout = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { isAuthenticated, user, role } = useSelector((store: any) => store.authentication);
+  const { isAuthenticated, firstname, lastname, role, avatarPath } = useSelector((store: any) => store.authentication);
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -157,7 +157,9 @@ export const Layout = () => {
                     aria-expanded={open ? 'true' : undefined}
                   >
                     {/*// TODO: Glisser ici le path profil pic cherché dans le public assets*/}
-                    <Avatar sx={{ width: 52, height: 52 }}>M</Avatar>
+                    <Avatar sx={{ width: 52, height: 52 }}>
+                      <img src={'../../public/' + avatarPath} width="60px" alt="" />
+                    </Avatar>
                   </IconButton>
                 </Tooltip>
                 <Menu
@@ -196,8 +198,11 @@ export const Layout = () => {
                   anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                 >
                   <MenuItem disabled={true} onClick={handleClose}>
-                    <Avatar sx={{ width: 32, height: 32 }}>{user[0]}</Avatar>
-                    {user}
+                    <Avatar sx={{ width: 32, height: 32 }}>
+                      {firstname[0]}
+                      {lastname[0]}
+                    </Avatar>
+                    {firstname} {lastname}
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <ListItemIcon>

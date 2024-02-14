@@ -248,7 +248,7 @@ async function main() {
       email: 'admin@admin.admin',
       role: 'ADMIN',
       password: passwordAdmin1,
-      avatarPath: 'assets/avatar/user-avatar-00001',
+      avatarPath: 'assets/avatar/user-avatar-00001.jpeg',
     },
   });
 
