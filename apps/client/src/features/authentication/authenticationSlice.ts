@@ -1,13 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { getDecodedAccessToken } from '../../common/tools/jwt-tool.ts';
+import { AppDispatch, AuthState } from '../../common/types/auth.ts';
 import { LoginDto } from 'api/dist/src/auth/dto/login.dto';
-import { jwtDecode } from 'jwt-decode';
 
-const initialState = {
+const initialState: AuthState = {
   isAuthenticated: false,
   tokenHashed: '',
-
   role: '',
-
   userId: null,
   avatarPath: '',
   email: '',
@@ -15,19 +14,14 @@ const initialState = {
   lastname: '',
   exp: null,
   iat: null,
-
   errorFetchingLogin: '',
 };
 
-const authenticateSlice = createSlice({
+export const authenticateSlice = createSlice({
   name: 'authenticate',
   initialState,
   reducers: {
-    login() {
-      // console.log(action.payload);
-      // console.log(state);
-    },
-    saveToken(state, action) {
+    saveToken(state, action: PayloadAction<string>) {
       const tokenDecoded = getDecodedAccessToken(action.payload);
       state.isAuthenticated = true;
       state.tokenHashed = action.payload;
@@ -58,39 +52,38 @@ const authenticateSlice = createSlice({
       state.exp = null;
       state.iat = null;
     },
-    error(state, action) {
+    error(state, action: PayloadAction<string>) {
       state.errorFetchingLogin = action.payload;
     },
   },
 });
-type AppDispatch = (args: any) => any;
 
-export function login(email: string, password: string) {
+export const login = (email: string, password: string) => async (dispatch: AppDispatch) => {
   const postData: LoginDto = {
-    email: email,
-    password: password,
+    email,
+    password,
   };
-  return async function (dispatch: AppDispatch, getState: any) {
-    fetch('http://localhost:3000/api/auth/login', {
+
+  try {
+    const response = await fetch('http://localhost:3000/api/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(postData),
-    })
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: 'authenticate/saveToken', payload: data.accessToken }))
-      .catch(() => dispatch({ type: 'authenticate/error', payload: 'Une erreur est apparut lors de la connexion' }));
-  };
-}
+    });
 
-export const getDecodedAccessToken = (token: string): any => {
-  try {
-    return jwtDecode(token);
-  } catch (Error) {
-    return null;
+    if (!response.ok) {
+      throw new Error('Une erreur est survenue lors de la connexion');
+    }
+
+    const data = await response.json();
+    dispatch(authenticateSlice.actions.saveToken(data.accessToken));
+  } catch (error: any) {
+    dispatch(authenticateSlice.actions.error(error.message));
   }
 };
 
 export const { logout } = authenticateSlice.actions;
+
 export default authenticateSlice.reducer;
