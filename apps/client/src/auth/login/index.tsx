@@ -1,4 +1,4 @@
-import { Grid, TextField } from '@mui/material';
+import { Alert, Grid, TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
@@ -34,7 +34,7 @@ export const Login = () => {
       boxShadow={4}
       sx={{ marginTop: '20vh' }}
     >
-      {errorFetchingLogin != '' && errorFetchingLogin}
+      {errorFetchingLogin != '' && <Alert severity="error">{errorFetchingLogin}</Alert>}
       <Grid margin="auto" item xs={12}>
         <Typography variant="h3">Login</Typography>
       </Grid>
