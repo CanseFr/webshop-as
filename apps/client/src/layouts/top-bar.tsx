@@ -43,6 +43,11 @@ export const Layout = () => {
     navigate(link);
   };
 
+  const handleAdmin = () => {
+    handleClose();
+    navigate('admin');
+  };
+
   const handleLogout = (link: string) => {
     setAnchorElNav(null);
     dispatch(logout());
@@ -221,7 +226,7 @@ export const Layout = () => {
                   {/*<Divider />*/}
                   {role === 'ADMIN' && (
                     <>
-                      <MenuItem onClick={handleClose}>
+                      <MenuItem onClick={() => handleAdmin()}>
                         <ListItemIcon>
                           <GppGood color={'info'} fontSize="small" />
                         </ListItemIcon>
