@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Upgrade login with alert if probleme during connection.">
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":bug: Fix bug on register">
+      <change afterPath="$PROJECT_DIR$/apps/client/src/common/utils/protected-route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/layouts/admin-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/invoices/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/nav-bar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/orders/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/products/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/stats/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/support/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/features/authentication/authenticationSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/features/authentication/authenticationSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +27,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="47-upgrade-login" />
+        <entry key="$PROJECT_DIR$" value="29-setup-register" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,36 +54,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.Dockerfile build.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;29-setup-register&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/canse/Documents/App/webshop-as/apps/client/public/assets/avatar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.Dockerfile build.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "34-setup-admin-dashboard",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/canse/Documents/App/webshop-as/apps/client/src/pages/admin/users",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/canse/Documents/App/webshop-as/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/apps/client/public/assets/avatar" />
-      <recent name="$PROJECT_DIR$/apps/client/src/pages/shop" />
-      <recent name="$PROJECT_DIR$/apps/client/src/pages/register" />
-      <recent name="$PROJECT_DIR$/apps/client/src/pages/login" />
-      <recent name="$PROJECT_DIR$/apps/client/src/pages/home" />
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/users" />
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/support" />
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/stats" />
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/products" />
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/orders" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/client/src/pages/admin" />
       <recent name="$PROJECT_DIR$/apps/client/src/common/tools" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/apps/client/public" />
@@ -106,6 +113,7 @@
       <list>
         <item itemvalue="Docker.Dockerfile build" />
         <item itemvalue="Docker.Dockerfile build" />
+        <item itemvalue="Docker.Dockerfile build" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +139,7 @@
       <workItem from="1708079298459" duration="2025000" />
       <workItem from="1708096105360" duration="1912000" />
       <workItem from="1708098165349" duration="2032000" />
-      <workItem from="1708731277964" duration="5235000" />
+      <workItem from="1708731277964" duration="13968000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -421,7 +429,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708010341980</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary=":heavy_plus_sign: Add dependency about uuid">
+      <option name="closed" value="true" />
+      <created>1708736628688</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1708736628688</updated>
+    </task>
+    <task id="LOCAL-00038" summary=":bug: Fix bug on register">
+      <option name="closed" value="true" />
+      <created>1708736657355</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1708736657355</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,8 +468,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
-    <MESSAGE value=":sparkles: Create Client React" />
-    <MESSAGE value=":hammer: Update script developpement for turbo pipeline" />
     <MESSAGE value=":memo: Create docuementation folder and begin to explain dev and prod, mono repo and other starter empty file" />
     <MESSAGE value=":hammer: Update forgotten script flag to see in terminal front and back" />
     <MESSAGE value=":zap: Update proxy parameter for dev mode and set greeting test api hello world on home page" />
@@ -469,6 +491,8 @@
     <MESSAGE value=":sparkles: Get methode slicer and show value on template" />
     <MESSAGE value=":recycle: Upgrade logic and file of auth slice" />
     <MESSAGE value=":sparkles: Upgrade login with alert if probleme during connection." />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Upgrade login with alert if probleme during connection." />
+    <MESSAGE value=":heavy_plus_sign: Add dependency about uuid" />
+    <MESSAGE value=":bug: Fix bug on register" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bug: Fix bug on register" />
   </component>
 </project>
