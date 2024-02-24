@@ -22,6 +22,7 @@ export const authenticateSlice = createSlice({
   initialState,
   reducers: {
     saveToken(state, action: PayloadAction<string>) {
+      localStorage.setItem('token', action.payload);
       const tokenDecoded = getDecodedAccessToken(action.payload);
       state.isAuthenticated = true;
       state.tokenHashed = action.payload;
@@ -39,6 +40,8 @@ export const authenticateSlice = createSlice({
       state.errorFetchingLogin = '';
     },
     logout(state) {
+      localStorage.removeItem('token');
+
       state.isAuthenticated = false;
       state.tokenHashed = '';
 
