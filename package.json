@@ -15,8 +15,10 @@
   ],
   "dependencies": {
     "@fontsource/roboto": "^5.0.8",
+    "@types/uuid": "^9.0.8",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
-    "react-draggable": "^4.4.6"
+    "react-draggable": "^4.4.6",
+    "workspace": "^0.0.1-preview.1"
   }
 }
