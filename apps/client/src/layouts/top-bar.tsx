@@ -219,7 +219,7 @@ export const Layout = () => {
                   {/*  Settings*/}
                   {/*</MenuItem>*/}
                   {/*<Divider />*/}
-                  {role && (
+                  {role === 'ADMIN' && (
                     <>
                       <MenuItem onClick={handleClose}>
                         <ListItemIcon>

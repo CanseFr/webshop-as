@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Get methode slicer and show value on template">
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Upgrade login with alert if probleme during connection.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/features/authentication/authenticationSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/features/authentication/authenticationSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +22,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2-create-the-linter-and-prettier-rules" />
+        <entry key="$PROJECT_DIR$" value="47-upgrade-login" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,36 +48,37 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile build.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "28-setup-login",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/canse/Documents/App/webshop-as/apps/client/src/pages/shop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/canse/Documents/App/webshop-as/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile build.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;29-setup-register&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/canse/Documents/App/webshop-as/apps/client/public/assets/avatar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/client/public/assets/avatar" />
       <recent name="$PROJECT_DIR$/apps/client/src/pages/shop" />
       <recent name="$PROJECT_DIR$/apps/client/src/pages/register" />
       <recent name="$PROJECT_DIR$/apps/client/src/pages/login" />
       <recent name="$PROJECT_DIR$/apps/client/src/pages/home" />
-      <recent name="$PROJECT_DIR$/apps/client/src/assets/logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/client/src/common/tools" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/apps/client/public" />
     </key>
@@ -97,8 +105,16 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Dockerfile build" />
+        <item itemvalue="Docker.Dockerfile build" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-985749b364ce-JavaScript-WS-233.14015.89" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,6 +126,12 @@
       <updated>1706265825110</updated>
       <workItem from="1706265826116" duration="26875000" />
       <workItem from="1706391282267" duration="834000" />
+      <workItem from="1707989980646" duration="2563000" />
+      <workItem from="1707994109658" duration="15361000" />
+      <workItem from="1708079298459" duration="2025000" />
+      <workItem from="1708096105360" duration="1912000" />
+      <workItem from="1708098165349" duration="2032000" />
+      <workItem from="1708731277964" duration="5235000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -383,7 +405,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707831621967</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary=":recycle: Upgrade logic and file of auth slice">
+      <option name="closed" value="true" />
+      <created>1707992459444</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1707992459444</updated>
+    </task>
+    <task id="LOCAL-00036" summary=":sparkles: Upgrade login with alert if probleme during connection.">
+      <option name="closed" value="true" />
+      <created>1708010341980</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1708010341980</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,8 +444,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
-    <MESSAGE value=":see_no_evil: Comment all gitignore file of projet/.idea/.gitignore" />
-    <MESSAGE value=":sparkles: Create Api Nestjs for real, last was juste about package json and many probleme about .git in apps/api" />
     <MESSAGE value=":sparkles: Create Client React" />
     <MESSAGE value=":hammer: Update script developpement for turbo pipeline" />
     <MESSAGE value=":memo: Create docuementation folder and begin to explain dev and prod, mono repo and other starter empty file" />
@@ -431,6 +467,8 @@
     <MESSAGE value=":sparkles: Create the Authentication slice and his Store" />
     <MESSAGE value=":sparkles: Provide context store" />
     <MESSAGE value=":sparkles: Get methode slicer and show value on template" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Get methode slicer and show value on template" />
+    <MESSAGE value=":recycle: Upgrade logic and file of auth slice" />
+    <MESSAGE value=":sparkles: Upgrade login with alert if probleme during connection." />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Upgrade login with alert if probleme during connection." />
   </component>
 </project>
