@@ -11,4 +11,14 @@ updates:
       - "./apps/client"
     schedule:
       interval: "daily"
+    groups:
+      # Specify a name for the group, which will be used in pull request titles
+      # and branch names
+      react:
+        applies-to: version-updates
+        patterns:
+          - "@react*"
+        update-types:
+          - "minor"
+          - "patch"
 
