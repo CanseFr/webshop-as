@@ -6,12 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "./apps/api" # Location of package manifests
-    schedule:
-      interval: "daily"
-
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "./apps/client" # Location of package manifests
+    directory: 
+      - "./apps/api" 
+      - "./apps/client"
     schedule:
       interval: "daily"
 
