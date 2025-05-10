@@ -192,7 +192,7 @@ export const Register = () => {
   return (
     <>
       <Grid
-        width="40vw"
+        width="80vw"
         container
         spacing={2}
         display="flex"

@@ -9,7 +9,7 @@ export const ForgotPassword = () => {
 
   return (
     <Grid
-      width="40vw"
+      width="90vw"
       container
       spacing={2}
       display="flex"
