@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Setup admin layout, nav bar and pages.">
-      <change afterPath="$PROJECT_DIR$/apps/client/src/tool/interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/forgot-password/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/forgot-password/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":wrench: Config update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +147,7 @@
       <workItem from="1716967309278" duration="56000" />
       <workItem from="1725099459959" duration="47000" />
       <workItem from="1725099518615" duration="935000" />
-      <workItem from="1746869753965" duration="743000" />
+      <workItem from="1746869753965" duration="1078000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -463,7 +453,55 @@
       <option name="project" value="LOCAL" />
       <updated>1708736657355</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary=":memo: Ajust documentation">
+      <option name="closed" value="true" />
+      <created>1746870507451</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870507451</updated>
+    </task>
+    <task id="LOCAL-00040" summary=":lipstick: Ajust size">
+      <option name="closed" value="true" />
+      <created>1746870683238</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870683238</updated>
+    </task>
+    <task id="LOCAL-00041" summary=":sparkles: Data grid for user">
+      <option name="closed" value="true" />
+      <created>1746870703754</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870703754</updated>
+    </task>
+    <task id="LOCAL-00042" summary=":sparkles: Create interceptor">
+      <option name="closed" value="true" />
+      <created>1746870721583</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870721583</updated>
+    </task>
+    <task id="LOCAL-00043" summary=":heavy_plus_sign: Add dependencies grid and axios">
+      <option name="closed" value="true" />
+      <created>1746870782109</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870782109</updated>
+    </task>
+    <task id="LOCAL-00044" summary=":wrench: Config update">
+      <option name="closed" value="true" />
+      <created>1746870796508</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870796508</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,12 +535,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
-    <MESSAGE value=":memo: Create docuementation folder and begin to explain dev and prod, mono repo and other starter empty file" />
-    <MESSAGE value=":hammer: Update forgotten script flag to see in terminal front and back" />
-    <MESSAGE value=":zap: Update proxy parameter for dev mode and set greeting test api hello world on home page" />
-    <MESSAGE value=":construction_worker: Create the main build script to build app in both dist app folder" />
-    <MESSAGE value=":heavy_plus_sign: Add dependency depending NestJs to serve-static client" />
-    <MESSAGE value=":sparkles: Creation of the production script and import of the rootPath to serve the client's dist folder" />
     <MESSAGE value=":heavy_plus_sign: Add dependencies about router dom and Mui material" />
     <MESSAGE value=":lipstick: Update main css file about old project" />
     <MESSAGE value=":sparkles: Importing contact, home, login, register, shop and app-bar components" />
@@ -522,7 +554,13 @@
     <MESSAGE value=":sparkles: Upgrade login with alert if probleme during connection." />
     <MESSAGE value=":heavy_plus_sign: Add dependency about uuid" />
     <MESSAGE value=":bug: Fix bug on register" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bug: Fix bug on register" />
+    <MESSAGE value=":memo: Ajust documentation" />
+    <MESSAGE value=":lipstick: Ajust size" />
+    <MESSAGE value=":sparkles: Data grid for user" />
+    <MESSAGE value=":sparkles: Create interceptor" />
+    <MESSAGE value=":heavy_plus_sign: Add dependencies grid and axios" />
+    <MESSAGE value=":wrench: Config update" />
+    <option name="LAST_COMMIT_MESSAGE" value=":wrench: Config update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
