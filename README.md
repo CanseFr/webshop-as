@@ -127,38 +127,27 @@ As part of this project, my goal is to implement the essential functionalities o
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 1. Clone the repo
-   ```sh
-   git clone https://github.com/CanseFr/webshop-as.git
-   ```
+```sh
+git clone https://github.com/CanseFr/webshop-as.git
+```
 3. Install NPM packages
-   ```sh
-   npm install
-   ```
+```sh
+npm install
+```
 
 4. Ajust .env file
-   ```sh
-    prisma generate
-   .env > DATABASE_URL="mysql://user:password@localhost:PORT/webshop-as"
-   ```
-5. Create database if needed
-    ```sql
-    create schema `webshop-as`;
-    ```
-6. Seed entities and tables
-    ```shell
-    cd apps/api
-    npx prisma migrate dev --name "restart-from-branch"
-    npx prisma db seed
-    ```
+```sh
+.env > DATABASE_URL="mysql://user:password@localhost:PORT/webshop-as"
+```
+5. Seed entities and tables
+ ```sh
+ cd apps/api
+ npx prisma migrate dev --name "restart-from-branch"
+ npx prisma db seed
+ ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -193,9 +182,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Canse - jucansell@gmail.com
-
-Project Link: [Github](https://github.com/CanseFr)
+Canse : [Github](https://github.com/CanseFr)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
