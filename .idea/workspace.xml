@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":bug: Fix bug on register">
-      <change afterPath="$PROJECT_DIR$/apps/client/src/common/utils/protected-route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/layouts/admin-layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/home/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/invoices/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/nav-bar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/orders/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/products/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/stats/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/support/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" afterDir="false" />
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":sparkles: Setup admin layout, nav bar and pages.">
+      <change afterPath="$PROJECT_DIR$/apps/client/src/tool/interceptor.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/layouts/top-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/forgot-password/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/forgot-password/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/auth/register/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -40,6 +36,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CanseFr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CanseFr/webshop-as.git&quot;,
+    &quot;accountId&quot;: &quot;ec3b0f6c-8faa-44d6-adfe-9c62b57247f7&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,7 +55,6 @@
     &quot;associatedIndex&quot;: 4
     }</component>
   <component name="ProjectId" id="2bUNiZZuOPxDYZdXLgaApgtkpMF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,9 +66,10 @@
     "Docker.Dockerfile build.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "34-setup-admin-dashboard",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/canse/Documents/App/webshop-as/apps/client/src/pages/admin/users",
+    "last_opened_file_path": "/Users/canse/Documents/App/webshop-as",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -96,7 +104,6 @@
         <settings>
           <option name="imageTag" value="node18_build" />
           <option name="buildCliOptions" value="--target build" />
-          <option name="buildKitEnabled" value="true" />
           <option name="buildOnly" value="true" />
           <option name="sourceFilePath" value="Dockerfile" />
         </settings>
@@ -120,7 +127,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-985749b364ce-JavaScript-WS-233.14015.89" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -140,6 +147,17 @@
       <workItem from="1708096105360" duration="1912000" />
       <workItem from="1708098165349" duration="2032000" />
       <workItem from="1708731277964" duration="13968000" />
+      <workItem from="1709560008819" duration="1410000" />
+      <workItem from="1709563224910" duration="1006000" />
+      <workItem from="1709564267418" duration="607000" />
+      <workItem from="1709564960835" duration="592000" />
+      <workItem from="1709738755212" duration="898000" />
+      <workItem from="1712136395319" duration="99000" />
+      <workItem from="1715965522735" duration="10000" />
+      <workItem from="1716967309278" duration="56000" />
+      <workItem from="1725099459959" duration="47000" />
+      <workItem from="1725099518615" duration="935000" />
+      <workItem from="1746869753965" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -457,6 +475,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="SHOW_ROOT_NAMES" value="true" />
             </State>
           </value>
@@ -494,5 +523,16 @@
     <MESSAGE value=":heavy_plus_sign: Add dependency about uuid" />
     <MESSAGE value=":bug: Fix bug on register" />
     <option name="LAST_COMMIT_MESSAGE" value=":bug: Fix bug on register" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/api/prisma/seed.ts</url>
+          <line>251</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
