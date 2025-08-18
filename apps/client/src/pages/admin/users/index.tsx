@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 90 },
@@ -47,7 +47,7 @@ const rows = [
 ];
 
 export const ManageUsers = () => {
-  const [users, setUsers] = useState();
+  // const [users, setUsers] = useState();
 
   useEffect(() => {
     fetch('http://localhost:3000/api/users').then((data) => console.log(data));

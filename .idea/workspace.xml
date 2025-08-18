@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":wrench: Config update" />
+    <list default="true" id="2a83b965-b9a3-4b08-a04e-9b20df45d097" name="Changes" comment=":see_no_evil: Update gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/common/utils/protected-route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/common/utils/protected-route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/pages/admin/nav-bar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/nav-bar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/client/src/pages/admin/users/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,28 +56,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile build.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/canse/Documents/App/webshop-as",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/canse/Documents/App/webshop-as/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile build.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/canse/Documents/App/webshop-as&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/canse/Documents/App/webshop-as/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/client/src/pages/admin/users" />
@@ -147,7 +152,8 @@
       <workItem from="1716967309278" duration="56000" />
       <workItem from="1725099459959" duration="47000" />
       <workItem from="1725099518615" duration="935000" />
-      <workItem from="1746869753965" duration="1078000" />
+      <workItem from="1746869753965" duration="1448000" />
+      <workItem from="1746872860835" duration="3022000" />
     </task>
     <task id="LOCAL-00001" summary=":heavy_plus_sign: Add turbo dependency to manage monorepo and add property &quot;workspace&quot; in package.json">
       <option name="closed" value="true" />
@@ -501,7 +507,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746870796508</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary=":wrench: Config update">
+      <option name="closed" value="true" />
+      <created>1746870862807</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870862807</updated>
+    </task>
+    <task id="LOCAL-00046" summary=":see_no_evil: Update gitignore">
+      <option name="closed" value="true" />
+      <created>1746896946056</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1746896946056</updated>
+    </task>
+    <task id="LOCAL-00047" summary=":see_no_evil: Update gitignore">
+      <option name="closed" value="true" />
+      <created>1746897378547</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746897378547</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +565,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/apps/api" />
     </ignored-roots>
-    <MESSAGE value=":heavy_plus_sign: Add dependencies about router dom and Mui material" />
     <MESSAGE value=":lipstick: Update main css file about old project" />
     <MESSAGE value=":sparkles: Importing contact, home, login, register, shop and app-bar components" />
     <MESSAGE value=":bento: Import and update path assets logo ico" />
@@ -560,17 +589,7 @@
     <MESSAGE value=":sparkles: Create interceptor" />
     <MESSAGE value=":heavy_plus_sign: Add dependencies grid and axios" />
     <MESSAGE value=":wrench: Config update" />
-    <option name="LAST_COMMIT_MESSAGE" value=":wrench: Config update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/apps/api/prisma/seed.ts</url>
-          <line>251</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value=":see_no_evil: Update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=":see_no_evil: Update gitignore" />
   </component>
 </project>

@@ -28,7 +28,7 @@ export const AdminNav = () => {
       display="flex"
       flexDirection="column"
       bgcolor="#f7a2ab"
-      sx={{ objectFit: 'contain', width: !isBarOpen ? 'unset' : '8vh' }}
+      sx={{  width: !isBarOpen ? 'unset' : '80px' }}
     >
       {isBarOpen ? (
         <Button onClick={() => setIsBarOpen(!isBarOpen)}>
@@ -44,6 +44,7 @@ export const AdminNav = () => {
           <Button sx={{ marginTop: '4vh' }} onClick={() => nav(listIcon[index][1].toString().toLowerCase())}>
             {icon[0]}
           </Button>
+
         ))}
       {!isBarOpen &&
         listIcon.map((section, index) => (
